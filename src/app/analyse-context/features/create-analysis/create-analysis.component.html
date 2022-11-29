@@ -1,0 +1,25 @@
+<div class="create-analysis-container">
+  <div class="create-analysis">
+    <div class="create-analysis-header">
+      <h2>Create Analysis</h2>
+    </div>
+    <div class="create-analysis-form">
+      <!-- input to choose the type of analysis-->
+      <div class="create-analysis-form-type">
+        <label for="analysis-type">Analysis Type</label>
+        <select [(ngModel)]="analysisType" name="analysis-type" id="analysis-type">
+          <option value="wear">Wear</option>
+          <option value="reference">Reference</option>
+        </select>
+      </div>
+      <div class="analysis-form">
+        <ng-template [ngIf]="analysisType === 'wear'">
+          <app-create-wear-analysis-form></app-create-wear-analysis-form>
+        </ng-template>
+        <ng-template [ngIf]="analysisType === 'reference'">
+          <app-create-reference-analysis-form></app-create-reference-analysis-form>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

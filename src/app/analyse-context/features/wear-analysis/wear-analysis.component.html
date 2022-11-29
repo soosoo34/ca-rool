@@ -1,0 +1,14 @@
+<div class="wear-container d-flex flex-row">
+  <div *ngFor="let wear of wears">
+    <div class="wear">
+
+      <div class="wear-name"> <h3>Vehicle</h3>{{ wear.vehicle }}</div>
+      <div class="wear-description"><h3>Rate</h3>{{ wear.rate }}</div>
+      <div class="wear-price"><h3>ID</h3>{{ wear.id }}</div>
+      <div class="wear-picture"> <img src="{{wear.picture}}" /></div>
+      <div>
+        <button (click)="delete(wear.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

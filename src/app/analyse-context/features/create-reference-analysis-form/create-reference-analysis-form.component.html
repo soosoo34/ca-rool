@@ -1,0 +1,17 @@
+
+<form [formGroup]="referenceForm">
+  <div class="container">
+    <label>id :</label>
+    <input type="text" formControlName="id" placeholder="id">
+    <label>Vehicle :</label>
+    <input type="text" formControlName="vehicle" placeholder="vehcile">
+    <label>Picutre :</label>
+    <input type="text" formControlName="picture" placeholder="link to picture">
+    <label>Reference :</label>
+    <input type="text" formControlName="reference" placeholder="reference">
+    <button type="submit" (click)="createReference()">Submit</button>
+
+
+  </div>
+
+</form>

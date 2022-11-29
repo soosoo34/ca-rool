@@ -1,0 +1,21 @@
+
+.wear-container {
+  margin-top: 80px;
+}
+.wear {
+
+  background: #f6f1f1;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 300px;
+  padding:  0 350px;
+  img {
+    height: 200px;
+    width: 250px;
+    margin-top: 15%;
+  }
+
+}

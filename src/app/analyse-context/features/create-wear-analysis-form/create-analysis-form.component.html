@@ -1,0 +1,17 @@
+<form [formGroup]="wearForm">
+  <div class="container">
+    <label>id :</label>
+    <input type="text" formControlName="id" placeholder="id">
+    <label>Vehicle :</label>
+    <input type="text" formControlName="vehicle" placeholder="vehicle">
+    <label>Picutre :</label>
+    <input type="text" formControlName="picture" placeholder="link to picture">
+    <label>rate :</label>
+    <select formControlName="rate">
+      <option *ngFor="let rate of rates" [value]="rate">{{rate}}</option>
+    </select>
+    <button type="submit" (click)="createWear()">Submit</button>
+  </div>
+</form>
+
+

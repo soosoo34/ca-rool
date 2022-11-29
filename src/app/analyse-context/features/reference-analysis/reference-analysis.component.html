@@ -1,0 +1,13 @@
+<div class="wear-container">
+  <div *ngFor="let reference of references">
+    <div class="wear">
+      <div class="wear-name">{{ reference.vehicle }}</div>
+      <div class="wear-description">{{ reference.dimension }}</div>
+      <div class="wear-price">{{ reference.id }}</div>
+      <div class="wear-picture"> <img src="{{reference.picture}}" /></div>
+      <div>
+        <button (click)="deleteReference(reference.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
